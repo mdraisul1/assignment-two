@@ -102,5 +102,64 @@ body {
     border-radius: var(--border-radius-primary);
     font-size: 20px;
     border: none;
+    cursor: pointer;
 }
+.nav-btn .nav-primary:hover{
+    background-color: #f4b64d;
+}
+
+/* hero-section css */
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.hero-content{
+    width: 55%;
+}
+.hero-image{
+    width: 45%;
+}
+.hero-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    color: #111111;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.hero-content .empower{
+    color: var(--color-primary);
+}
+.hero-content .towar{
+    color: var(--color-bg-primary);
+}
+.hero-content p{
+    font-size: 16px;
+    color: var(--color-font-primary);
+    line-height: 1.5;
+    padding-right: 40px;
+    margin-bottom: 30px;
+}
+.hero-btn .hero-btn-primary{
+    background-color: #111111;
+    color: var(--color-bg-secondary);
+    padding: 10px 30px;
+    border-radius: var(--border-radius-primary);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.hero-image img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
 
