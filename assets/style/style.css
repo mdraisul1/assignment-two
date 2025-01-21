@@ -1,0 +1,44 @@
+/* Google font  */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root{
+    --color-primary: #FEA301;
+    --color-secondary: #111111;
+    --color-tertiary: #01ACFD;
+
+    /* button color  */
+    --color-btn-primary: #3CD8E8;
+    --color-btn-secondary: #95B226;
+    --color-btn-tertiary: #5D58F0;
+
+    /* font color  */
+    --color-font-primary: #808080;
+    --color-font-secondary: #666666;
+
+    /* background color  */
+    --color-bg-primary: #01ACFD;
+    --color-bg-secondary: #F7F7F7;
+
+    /* font size  */
+    --font-size-primary: 15px;
+
+    /* border radius  */
+    --border-radius-primary: 5px;
+}
+
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body css */
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+
