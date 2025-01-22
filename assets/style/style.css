@@ -53,7 +53,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 /* header css */
@@ -68,6 +67,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+}
+.menu-logo {
+    display: none;
 }
 .nav-logo{
     display: flex;
@@ -113,6 +115,32 @@ body {
 }
 .nav-btn .nav-primary:hover{
     background-color: #f4b64d;
+}
+
+@media screen and (max-width: 768px){
+    .nav-list{
+        display: none;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .menu-logo {
+        display: block;
+        font-size: 30px;
+    }
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    .hero-content{
+        text-align: center;
+    }
+    .hero-content h1{
+        font-size: 40px !important;
+        text-align: center;
+    }
+    .hero-content p{
+        font-size: 14px !important;
+    }
 }
 
 /* hero-section css */
@@ -162,79 +190,92 @@ body {
     height: auto;
 }
 
-/* standard-section css  */
-.standard-area h1{
+
+/* standard-section css */
+.standard-area h1 {
     text-align: center;
     font-size: 40px;
     font-weight: 700;
     color: var(--color-secondary);
     padding: 40px 0;
 }
-.standard-section{
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
+
+.standard-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
-.standard-section .card{
-    width: 33%;
+
+.standard-section .card {
     text-align: center;
     padding: 20px;
     margin: 30px 0;
     border-radius: 8px;
 }
-.standard-section .card:nth-child(1){
+
+.standard-section .card:nth-child(1) {
     border: 1px solid #DEF5FF;
-    background: linear-gradient(to top,#ffffff, #DEF5FF);
+    background: linear-gradient(to top, #ffffff, #DEF5FF);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-.standard-section .card:nth-child(2){
+
+.standard-section .card:nth-child(2) {
     border: 1px solid #FFF4DC;
-    background: linear-gradient(to top,#ffffff, #FFF4DC);
+    background: linear-gradient(to top, #ffffff, #FFF4DC);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-.standard-section .card:nth-child(3){
+
+.standard-section .card:nth-child(3) {
     border: 1px solid #F2E8FF;
-    background: linear-gradient(to top,#ffffff, #F2E8FF);
+    background: linear-gradient(to top, #ffffff, #F2E8FF);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-.standard-section .card img{
+
+.standard-section .card img {
     width: 100px;
     height: auto;
     margin: 30px 0;
 }
-.standard-section .card h3{
+
+.standard-section .card h3 {
     font-size: 25px;
     font-weight: 600;
     margin: 15px 0;
 }
 
-.standard-section .card p{
+.standard-section .card p {
     font-size: 16px;
     color: var(--color-font-primary);
     line-height: 1.5;
     margin-bottom: 15px;
 }
-.standard-section .card a{
+
+.standard-section .card a {
     font-size: 18px;
     text-decoration: none;
     display: inline-block;
     margin: 20px 0;
     font-weight: bold;
 }
-.standard-section .card:nth-child(1) a{
+
+.standard-section .card:nth-child(1) a {
     color: var(--color-btn-primary);
 }
-.standard-section .card:nth-child(2) a{
+
+.standard-section .card:nth-child(2) a {
     color: var(--color-primary);
 }
-.standard-section .card:nth-child(3) a{
+
+.standard-section .card:nth-child(3) a {
     color: #8700FF;
 }
-.slide-icon{
+
+.slide-icon {
     margin-top: 30px;
     text-align: center;
 }
-.slide-icon i{
+
+.slide-icon i {
     font-size: 30px;
     background: #f4b64d;
     color: #ffffff;
@@ -243,8 +284,26 @@ body {
     border-radius: 50%;
 }
 
+@media (max-width: 768px) {
+    .standard-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .standard-area h1 {
+        font-size: 30px;
+    }
+
+    .standard-section .card {
+        margin: 20px 0;
+    }
+}
+
+
 /* stories-section styles */
 .stories-section{
+    display: block;
+    overflow: hidden;
     padding-top: 100px;
     background: linear-gradient(to bottom, #ffffff, #efd2a1);
 }
