@@ -137,6 +137,7 @@ body {
     }
     .hero-image{
     width: 100% !important;
+    align-items: center;
     }
     .hero-content h1{
         font-size: 40px !important;
