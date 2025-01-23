@@ -127,6 +127,7 @@ body {
     .menu-logo {
         display: block;
         font-size: 30px;
+        cursor: pointer;
     }
     .hero-section{
         flex-direction: column-reverse;
